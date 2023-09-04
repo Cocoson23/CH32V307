@@ -1,5 +1,5 @@
 # 32-bit Interconnected RISC-V MCU CH32V307
-EN | [中文](README_zh.md)
+[EN](README-EN.md) | [CN](README.md)
 
 
 
@@ -7,7 +7,7 @@ EN | [中文](README_zh.md)
 The CH32V305 and CH32V307 are interconnected microcontrollers, based on 32-bit RISC-V core, with hardware stack area and fast interrupt entry. Compared with standard RISC-V, the interrupt response speed is greatly improved. With single-precision float point instruction sets added and stack area extended, the CH32V305/7 has higher performance, the number of U(S)ART is extended to 8, and the number of motor timer is extended to 4. The CH32V305/7 provides USB2.0 high-speed interface (480Mbps) and has built-in PHY transceiver. Ethernet MAC is upgraded to GbE and integrates 10M PHY module.
 
 ### System Block Diagram
-<img src="image/frame.jpg" alt="frame" style="zoom:50%;" />
+![CH32V307VCT6](https://github.com/openwch/ch32v307/raw/main/image/frame.jpg)
  
 ### Features
 - RISC-V4F processor, max 144MHz system clock frequency;
