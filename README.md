@@ -1,6 +1,6 @@
 # 32位互联型RISC-V单片机CH32V307
 
-[EN](README.md) | 中文
+[EN](README-EN.md) | [CN](README.md)
 
 ### 概述
 
@@ -8,7 +8,7 @@ CH32V305/7系列是基于32位RISC-V设计的互联型微控制器，配备了�
 
 ### 系统框图
 
-<img src="image/frame.jpg" alt="frame" style="zoom:50%;" />
+![CH32V307VCT6](https://github.com/openwch/ch32v307/raw/main/image/frame.jpg)
 
 ### 产品特点
 
