@@ -1,0 +1,5 @@
+build.ninja
+build.eclipse
+cmake_output
+/.project
+.vscode

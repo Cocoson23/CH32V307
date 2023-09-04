@@ -1,0 +1,14 @@
+Toolchain=
+Series=
+Description=
+Address=0x08000000
+Erase All=true
+Program=true
+Verify=true
+Reset=true
+Target Path=obj/UART_DMA.hex
+
+Vendor=WCH
+MCU=CH32V307VCT6
+Mcu Type=CH32V30x
+Link=WCH-Link
