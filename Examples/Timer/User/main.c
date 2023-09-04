@@ -32,27 +32,26 @@ void GPIO_Toggle_INIT(void)
 }
 
 /*********************************************************************
- * @fn      TIM1_OutCompare_Init
+ * @fn      TIM6_Init
  *
- * @brief   Initializes TIM1 output compare.
+ * @brief   Initializes TIM6.
  *
- * @param   arr - the period value.
- *          psc - the prescaler value.
- *          ccp - the pulse value.
+ * @param   period - the period value.
+ *          period - the prescaler value.
  *
  * @return  none
  */
-void TIM6_Init( u16 arr, u16 psc)
+void TIM6_Init(u16 period, u16 prescaler)
 {
     TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 
     RCC_APB1PeriphClockCmd( RCC_APB1Periph_TIM6, ENABLE );
 
-    TIM_TimeBaseInitStructure.TIM_Period = arr;
-    TIM_TimeBaseInitStructure.TIM_Prescaler = psc;
+    TIM_TimeBaseInitStructure.TIM_Period = period;
+    TIM_TimeBaseInitStructure.TIM_Prescaler = prescaler;
     TIM_TimeBaseInitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
     TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Down;
-    TIM_TimeBaseInit( TIM6, &TIM_TimeBaseInitStructure);
+    TIM_TimeBaseInit(TIM6, &TIM_TimeBaseInitStructure);
 
     TIM_ITConfig(TIM6, TIM_IT_Update, ENABLE);
     TIM_ARRPreloadConfig( TIM6, ENABLE );
@@ -96,6 +95,9 @@ int main(void)
 	printf("This is Timer example\r\n");
 
 	GPIO_Toggle_INIT();
+	// period = 4999 -> 0-4999 即周期为5000
+	// prescaler = 14400-1 -> 144MHz / 14400 = 10000即为每秒进行10000次计数
+	// 则每0.5s LED 电平发生一次变化
 	TIM6_Init(5000-1, 14400-1);
 	Interrupt_Init();
 	while(1)
