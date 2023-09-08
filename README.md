@@ -1,5 +1,15 @@
 # CH32V307
-CH32V307RCT6-EVT-R1
+CH32V307RCT6-EVT-R1 based on **CH32V307RCT6-EVT-R1**  
+## Folders
+- [EVT](https://github.com/Cocoson23/CH32V307/tree/main/EVT)  
+WCH CH32V307
+相关资料
+- [OpenCH-CH32V307](https://github.com/Cocoson23/CH32V307/tree/main/OpenCH-CH32V307)  
+OpenCH赤菟开发板相关资料
+- Tools  
+烧录、调试等工具
+- Examples  
+个人学习实验例程  
 ## [Labs](https://github.com/Cocoson23/CH32V307/tree/main/Examples)  
 - LED_Control
 - EXTI_LED
