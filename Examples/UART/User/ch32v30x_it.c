@@ -38,5 +38,3 @@ void HardFault_Handler(void)
   {
   }
 }
-
-
